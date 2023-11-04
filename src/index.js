@@ -11,7 +11,8 @@ import { createClient } from 'graphql-ws'
 
 import './index.css'
 
-  const httpLink = new HttpLink({ uri: 'http://localhost:4000' })
+  //const httpLink = new HttpLink({ uri: 'http://localhost:4000' })
+  const httpLink = new HttpLink({ uri: 'https://library-backend-ue20.onrender.com/' })
 
   /*
   const wsLink = new WebSocketLink({
@@ -21,7 +22,8 @@ import './index.css'
   */
 
     const wsLink = new GraphQLWsLink(createClient({
-    url: 'ws://localhost:4000',
+    //url: 'ws://localhost:4000',
+    url: 'ws://library-backend-ue20.onrender.com/',
   }))
 
   const authLink = setContext((_, { headers }) => {
