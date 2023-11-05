@@ -27,7 +27,7 @@ import './index.css'
       //url: '/'
       url: 'ws://localhost:4000'
       //url: 'ws://library-backend-ue20.onrender.com:4000/',
-      url: 'ws://library-backend-ue20.onrender.com/',
+      //url: 'ws://library-backend-ue20.onrender.com/'
   }))
 
   const authLink = setContext((_, { headers }) => {
