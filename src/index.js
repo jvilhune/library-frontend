@@ -16,20 +16,21 @@ import './index.css'
   //const httpLink = new HttpLink({ uri: 'https://library-backend-ue20.onrender.com:4000/' })
   const httpLink = new HttpLink({ uri: 'https://library-backend-ue20.onrender.com/' })
 
-  /*
+
   const wsLink = new WebSocketLink({
-    uri: 'ws://localhost:4000',
+    uri: 'ws://library-backend-ue20.onrender.com/',
+    //uri: 'ws://localhost:4000',
     options: { reconnect: true }
   })
-  */
-
+  
+  /*
     const wsLink = new GraphQLWsLink(createClient({
       //url: '/'
       //url: 'ws://localhost:4000'
       //url: 'ws://library-backend-ue20.onrender.com:4000/'
       url: 'ws://library-backend-ue20.onrender.com/'
   }))
-
+*/
   const authLink = setContext((_, { headers }) => {
     const token = localStorage.getItem('book-user-token')
     //console.log('AUTHLINK EXECUTED')
