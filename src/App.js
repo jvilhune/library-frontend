@@ -3,6 +3,7 @@
 //npm install @apollo/client graphql
 //npm install graphql-ws
 //npm install @apollo/link-ws
+//npm install --save subscriptions-transport-ws
 
 import { useQuery, useApolloClient } from '@apollo/client'
 import { useSubscription } from '@apollo/client'
